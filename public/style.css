@@ -1,0 +1,103 @@
+/* style.css */
+/* Customs Styles */
+/* called by your view template */
+
+/* Colors */
+
+/* Colors / Background / Gradient*/
+
+
+.bg-gradient-kemedia-favicon {
+	background: rgb(137,114,184);
+	background: linear-gradient(56deg, rgba(137,114,184,1) 0%, rgba(201,53,153,1) 49%, rgba(29,226,240,1) 100%);
+}
+.bg-gradient-disco {
+	background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+.bg-gradient-seasalt {
+	background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+/* Colors / Gradient*/
+
+.gradient-kemedia-favicon {
+	background: rgb(137,114,184);
+	background: linear-gradient(56deg, rgba(137,114,184,1) 0%, rgba(201,53,153,1) 49%, rgba(29,226,240,1) 100%);
+}
+.gradient-disco {
+	color: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+.gradient-seasalt {
+		background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ORIGINAL CSS */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
