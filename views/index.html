@@ -140,22 +140,28 @@
   </div>
 </nav>
   </header>
-  <main class="">
+  <main class="mb-5">
     
-      <section class="intro card shadow mb-5 px-4">
+      <!-- <section class="intro card shadow mb-5 px-4"> -->
         <h1 class="responsive display-4">Fetch API</h1>
         <p class="lead">Use these tools to parse web pages and data</p>
-      </section>
-      <section class="card shadow mb-5 pt-4 px-4" id="formdream">
+      <!-- </section> -->
+      <!-- <section class="card shadow mb-5 pt-4 px-4" id="formdream">
         
-      </section>
-    
+      </section> -->
+    <form>
+          <input name="dream" type="text" maxlength="100" placeholder="Dreams!" aria-labelledby="submit-dream">
+          <button type="submit" id="submit-dream">Submit Dream</button>
+      </form>
       <section class="dreams">
         <ul id="dreams"></ul>
       </section>
+    
   </main>  
-    
-    
+    <hr>
+    <section class="dreams">
+        <ul id="dreams"></ul>
+      </section>
       
       <section class="NAME-ME-FORM-SECTION">
         <button id="getPosts">Get Posts API</button>
