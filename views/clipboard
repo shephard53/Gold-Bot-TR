@@ -1,0 +1,61 @@
+
+      <!-- <section class="NAME-ME-FORM-SECTION">
+        <button id="getPosts">Get Posts API</button>
+        <hr />
+      </section> -->
+
+  
+    
+      
+
+    
+
+    
+
+
+<form id="addPost">
+  <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="Title-group-text" id="inputGroup-sizing-default">Default</span>
+  </div>
+  <input type="text" placeholder="Title" id="title" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+</div>
+  <!--	<div>
+		<input type="text" id="title" placeholder="Title">
+	</div>
+	-->
+  <div>
+	<textarea id="body" placeholder="Body"></textarea>
+  </div>
+  <input type="submit" value="Submit">
+</form>
+
+<hr />
+
+<form id="getData">
+	<div>
+		<input type="text" id="inputURL" placeholder="Input URL">
+	</div>
+	<div>
+		<input type="checkbox" id="selParseEngine">
+	</div>
+	<input type="submit" value="Submit">
+</form>
+
+<form id="parseUrl">
+	<label for="basic-url">Parse URL:</label>
+  <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon3">iframe.ly/api/iframely?url=/</span>
+  </div>
+  <input type="text" class="form-control" id="inputUrl" aria-describedby="basic-addon3">
+  <div class="input-group-append">
+    <span class="input-group-text" id="basic-addon4">&api_key=57924d18254bf0be219387</span>
+  </div>
+  <input type="submit" value="Submit">
+</div>
+</form>
+	
+<div id="output"></div>
+
+    
