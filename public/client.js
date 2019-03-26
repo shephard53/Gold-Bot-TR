@@ -12,7 +12,7 @@ const dreams = [
 
 // define variables that reference elements on our page
 const dreamsList = document.getElementById('dreams');
-const dreamsForm = document.forms[0];
+const dreamsForm = document.forms[1];
 const dreamInput = dreamsForm.elements['dream'];
 
 // a helper function that creates a list item for a given dream
@@ -35,7 +35,8 @@ dreamsForm.onsubmit = function(event) {
   // get dream value and add it to the list
   dreams.push(dreamInput.value);
   appendNewDream(dreamInput.value);
-
+  console.log("New List Item: " + dreamInput.value );
+  
   // reset form 
   dreamInput.value = '';
   dreamInput.focus();
