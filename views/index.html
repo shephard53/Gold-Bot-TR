@@ -83,7 +83,7 @@
     
     <!-- import the webpage's client-side javascript file -->
     <script src="/client.js" defer></script>
-  </head>
+  
   
   <!-- SCRIPTS -->
 <!-- SCRIPTS/ jQuery Library -->
@@ -135,7 +135,7 @@
         </div>
       </li>
     </ul>
-    <form class="form-inline my-2 my-md-0">
+    <form id="searchForm" class="form-inline my-2 my-md-0">
       <input class="form-control" type="text" placeholder="Search">
     </form>
   </div>
@@ -152,7 +152,7 @@
       
       <p>Tell me your hopes and dreams:</p>
       
-      <form>
+      <form id="dForm">
         <input name="dream" type="text" maxlength="100" placeholder="Dreams!" aria-labelledby="submit-dream">
         <button type="submit" id="submit-dream">Submit Dream</button>
       </form>
