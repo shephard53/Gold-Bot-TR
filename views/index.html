@@ -140,22 +140,23 @@
   </div>
 </nav>
   </header>
-  <main class="container">
+  <main class="">
     
       <section class="intro card shadow mb-5 px-4">
         <h1 class="responsive display-4">Fetch API</h1>
         <p class="lead">Use these tools to parse web pages and data</p>
       </section>
-      <section id="formdream">
-        <form>
-          <input name="dream" type="text" maxlength="100" placeholder="Dreams!" aria-labelledby="submit-dream">
-          <button type="submit" id="submit-dream">Submit Dream</button>
-      </form>
+      <section class="card shadow mb-5 pt-4 px-4" id="formdream">
+        
+      </section>
+    
       <section class="dreams">
         <ul id="dreams"></ul>
       </section>
+  </main>  
+    
+    
       
-      </section>
       <section class="NAME-ME-FORM-SECTION">
         <button id="getPosts">Get Posts API</button>
         <hr />
@@ -171,21 +172,20 @@
 
 
 <form id="addPost">
-
-<div class="input-group mb-3">
+  <div class="input-group mb-3">
   <div class="input-group-prepend">
     <span class="Title-group-text" id="inputGroup-sizing-default">Default</span>
   </div>
   <input type="text" placeholder="Title" id="title" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 </div>
-<div>
+  <!--	<div>
 		<input type="text" id="title" placeholder="Title">
-</div>
-	
-	<div>
-		<textarea id="body" placeholder="Body"></textarea>
 	</div>
-	<input type="submit" value="Submit">
+	-->
+  <div>
+	<textarea id="body" placeholder="Body"></textarea>
+  </div>
+  <input type="submit" value="Submit">
 </form>
 
 <hr />
@@ -217,7 +217,7 @@
 <div id="output"></div>
 
     
-</main>
+
   <footer>
       Made with <a href="https://glitch.com">Glitch</a>!
 </footer>
