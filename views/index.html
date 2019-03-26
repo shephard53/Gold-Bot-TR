@@ -140,12 +140,11 @@
   </div>
 </nav>
   </header>
-  <main>
-    <div class="container">
-      <section class="intro card">
+  <main class="container">
+    
+      <section class="intro card shadow mb-5 px-4">
         <h1 class="responsive display-4">Fetch API</h1>
-        <br />
-        <p>Use these tools to parse web pages and data</p>
+        <p class="lead">Use these tools to parse web pages and data</p>
       </section>
       <section id="formdream">
         <form>
@@ -179,10 +178,10 @@
   </div>
   <input type="text" placeholder="Title" id="title" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 </div>
-<!--	<div>
+<div>
 		<input type="text" id="title" placeholder="Title">
-	</div>
-	-->
+</div>
+	
 	<div>
 		<textarea id="body" placeholder="Body"></textarea>
 	</div>
@@ -203,7 +202,7 @@
 
 <form id="parseUrl">
 	<label for="basic-url">Parse URL:</label>
-<div class="input-group mb-3">
+  <div class="input-group mb-3">
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon3">iframe.ly/api/iframely?url=/</span>
   </div>
@@ -213,18 +212,15 @@
   </div>
   <input type="submit" value="Submit">
 </div>
-
-
 </form>
 	
 <div id="output"></div>
-</div>
+
     
 </main>
-<footer>
+  <footer>
       Made with <a href="https://glitch.com">Glitch</a>!
 </footer>
-
 
 <script>
 // Event Listeners
@@ -326,8 +322,5 @@ function parseUrl(){
 
 </script>
 
-  
-  
-
-    
+</body>    
 </html>
