@@ -140,24 +140,11 @@
   </div>
 </nav>
   </header>
+  
+  
+  
+  
   <main>
-      <p class="bold">Oh hi,</p>
-      
-      <p>Tell me your hopes and dreams:</p>
-      
-      <form>
-        <input name="dream" type="text" maxlength="100" placeholder="Dreams!" aria-labelledby="submit-dream">
-        <button type="submit" id="submit-dream">Submit Dream</button>
-      </form>
-      
-      <section class="dreams">
-        <ul id="dreams"></ul>
-      </section>
-    </main>
-  
-  
-  
-  <!-- <main>
     
       <!-- <section class="intro card shadow mb-5 px-4"> -->
         <h1 class="responsive display-4">Fetch API</h1>
@@ -175,7 +162,6 @@
     </section>
     
   </main>  
-  -->
     <hr>
 
   
