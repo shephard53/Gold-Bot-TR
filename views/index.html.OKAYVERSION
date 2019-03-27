@@ -1,12 +1,3 @@
-<!-- This is a static file -->
-<!-- served from your routes in server.js -->
-
-<!-- You might want to try something fancier: -->
-<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
-<!-- pug: https://pugjs.org/ -->
-<!-- haml: http://haml.info/ -->
-<!-- hbs(handlebars): http://handlebarsjs.com/ -->
-
 <!DOCTYPE html>
 <html lang="en">
 		<head>
@@ -25,7 +16,7 @@
 		<!-- TITLE -->
 		<title>Fetch API</title>
 		
-<!-- LINK RELATIVE -->
+		<!-- LINK RELATIVE -->
 <!-- <link rel="canonical" href="https://kemist.github.io/kemedia/"> -->
 
 <!-- ICONS -->
@@ -45,6 +36,7 @@
 <link rel="stylesheet" type="text/css" href="https://kemist.github.io/kemedia/assets/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="https://kemist.github.io/kemedia/assets/css/bootstrap-grid.css">
 <link rel="stylesheet" type="text/css" href="https://kemist.github.io/kemedia/assets/css/bootstrap-reboot.css">
+
                                                        
 <!-- STYLES/CSS Font Awesome -->
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -52,7 +44,7 @@
 <!-- STYLES/CSS Custom Styles For This Template -->
 <!-- FIX ME bs-blog and starter-template.css-->
 <link rel="stylesheet" type="text/css" href="/bs-blog.css">
-<!-- <link rel="stylesheet" type="text/css" href="/starter-template.css">
+<link rel="stylesheet" type="text/css" href="/starter-template.css">
 <!-- <link rel="stylesheet" type="text/css" href="navbar-top-fixed.css"> -->
 <style>
       .bd-placeholder-img {
@@ -74,7 +66,7 @@
       .navbar {
          margin-bottom: 20px;
       }
-</style>
+    </style>
 		
 
     <!-- import the webpage's stylesheet -->
@@ -100,11 +92,12 @@
   }
 </script>
 
+
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <header></header>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Kemedia</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03"
     aria-expanded="false" aria-label="Toggle navigation">
@@ -134,67 +127,53 @@
         </div>
       </li>
     </ul>
-    <form class="form-inline my-2 my-md-0">
+    <form id="searchForm" class="form-inline my-2 my-md-0">
       <input class="form-control" type="text" placeholder="Search">
     </form>
   </div>
 </nav>
-  </header>
+	
   
   
   
   
-  <main>
-    
-      <!-- <section class="intro card shadow mb-5 px-4"> -->
-        <h1 class="responsive display-4">Fetch API</h1>
-        <p class="lead">Use these tools to parse web pages and data</p>
-      <!-- </section> -->
-      <!-- <section class="card shadow mb-5 pt-4 px-4" id="formdream">
-        
-      </section> -->
-    <form>
-          <input name="dream" type="text" maxlength="100" placeholder="Dreams!" aria-labelledby="submit-dream">
-          <button type="submit" id="submit-dream">Submit Dream</button>
-      </form>
-         <section class="dreams">
+<main>
+<div class="container">	
+  <section>
+    <h1 class="display-4">Fetch API</h1>
+    <br />
+    <form id="dForm">
+      <input name="dream" type="text" maxlength="100" placeholder="Dreams!" aria-labelledby="submit-dream">
+      <button type="submit" id="submit-dream">Submit Dream</button>
+    </form>
+  </section>
+      <section class="dreams">
         <ul id="dreams"></ul>
-    </section>
-    
-  </main>  
-    <hr>
-
+      </section>
   
   
-      <!-- <section class="NAME-ME-FORM-SECTION">
-        <button id="getPosts">Get Posts API</button>
-        <hr />
-      </section> -->
-
-  
-    
-      
-
-    
-
-    
+  </section> 
 
 
+<hr />
+<button id="getPosts">Get Posts API</button>
+  <hr />
 <form id="addPost">
-  <div class="input-group mb-3">
+
+<div class="input-group mb-3">
   <div class="input-group-prepend">
     <span class="Title-group-text" id="inputGroup-sizing-default">Default</span>
   </div>
   <input type="text" placeholder="Title" id="title" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 </div>
-  <!--	<div>
+<!--	<div>
 		<input type="text" id="title" placeholder="Title">
 	</div>
 	-->
-  <div>
-	<textarea id="body" placeholder="Body"></textarea>
-  </div>
-  <input type="submit" value="Submit">
+	<div>
+		<textarea id="body" placeholder="Body"></textarea>
+	</div>
+	<input type="submit" value="Submit">
 </form>
 
 <hr />
@@ -211,25 +190,22 @@
 
 <form id="parseUrl">
 	<label for="basic-url">Parse URL:</label>
-  <div class="input-group mb-3">
+<div class="input-group mb-3">
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon3">iframe.ly/api/iframely?url=/</span>
   </div>
   <input type="text" class="form-control" id="inputUrl" aria-describedby="basic-addon3">
   <div class="input-group-append">
-    <span class="input-group-text" id="basic-addon4">&api_key=57924d18254bf0be219387</span>
+    <span class="input-group-text" id="basic-addon3">&api_key=57924d18254bf0be219387</span>
   </div>
   <input type="submit" value="Submit">
 </div>
+
+
 </form>
 	
 <div id="output"></div>
-
-    
-
-<footer>
-      Made with <a href="https://glitch.com">Glitch</a>!
-</footer>
+</div>
 
 <script>
 // Event Listeners
@@ -237,15 +213,12 @@ document.getElementById('getPosts').addEventListener('click', getPosts);
 document.getElementById('addPost').addEventListener('submit', addPost);
 document.getElementById('getData').addEventListener('submit', getData);
 document.getElementById('parseUrl').addEventListener('submit', parseUrl);
-
 // Variables
 var inputURL = document.getElementById('getData').value;
 var inputURL = document.getElementById('parseUrl').value;
 var encodedInputURL = encodeURIComponent(inputURL);
-
 var apiEndpoint = "https://jsonplaceholder.typicode.com/posts";
 var iframelyApiEndpointURL = "iframe.ly/api/iframely?url=" + encodedInputURL + "&api_key=57924d18254bf0be219387";
-
 // Function: Get Posts
 function getPosts(){
 	fetch(apiEndpoint)
@@ -267,14 +240,12 @@ function getPosts(){
 		document.getElementById('output').innerHTML = output;
 	})
 }
-
 // Function: Add Post
 function addPost(e) {
 	e.preventDefault();
 	
 	let title = document.getElementById('title').value;
 	let body = document.getElementById('body').value;
-
 	fetch(apiEndpoint, {
 		method:'POST',
 		headers: {
@@ -286,7 +257,6 @@ function addPost(e) {
 	.then((res) => res.json())
 	.then((data) => console.log(data))
 }
-
 // Function Get Data (Parse URL)
 function getData(e) {
 	e.preventDefault();
@@ -306,7 +276,6 @@ function getData(e) {
 		document.getElementById('output').innerHTML = output;
 	})
 }
-
 // Function parseURL
 function parseUrl(){
 	fetch(iframelyApiEndpointURL)
@@ -328,8 +297,16 @@ function parseUrl(){
 		document.getElementById('output').innerHTML = output;
 	})
 }
-
 </script>
 
-</body>    
+
+
+</main>  
+<footer>
+  <p>
+    FOOTER CONTENT
+  </p>
+</footer>  
+  
+</body>
 </html>
